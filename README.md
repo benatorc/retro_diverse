@@ -2,6 +2,18 @@ Data and preprocessing can be found: https://www.dropbox.com/s/vuhv2a7kgbjsi0s/d
 
 This project is built on top of OpenNMT: https://github.com/OpenNMT/OpenNMT-py
 
+Dependencies:
+
+```
+conda install pytorch torchvision -c pytorch
+conda install -c rdkit rdkit
+conda install -c conda-forge pot
+conda install -c anaconda scikit-learn
+conda install -c conda-forge matplotlib
+conda install -c conda-forge tqdm
+conda install -c conda-forge tensorboardx
+```
+
 To preprocess the data:
 
 ```bash
