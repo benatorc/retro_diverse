@@ -35,7 +35,7 @@ model_name=model_name
 python  train.py -data data/${dataset}/${dataset} \
                  -save_model experiments/${dataset}_${model_name} \
                  -gpu_ranks 0 -save_checkpoint_steps 10000  -keep_checkpoint 50 \
-                 -train_steps 400000 -valid_steps 10000 -report_every 1000 -param_init 0  -param_init_glorot \
+                 -train_steps 500000 -valid_steps 10000 -report_every 1000 -param_init 0  -param_init_glorot \
                  -batch_size 4096 -batch_type tokens -normalization tokens -max_grad_norm 0  -accum_count 4 \
                  -optim adam -adam_beta1 0.9 -adam_beta2 0.998 -decay_method noam -warmup_steps 8000  \
                  -learning_rate 2 -label_smoothing 0.0 \
